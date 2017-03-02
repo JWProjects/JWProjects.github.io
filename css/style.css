@@ -5,6 +5,10 @@ body{
     background-color: #d5d9e0;
 }
 
+#nav{
+    cursor:pointer;
+}
+
 /*search function */
 #search{
     position: fixed;

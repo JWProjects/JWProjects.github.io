@@ -9,7 +9,7 @@
 </head>
 
 <script src=js/bootstrap.js></script>
-<script src=js/Search.js></script>
+<script src=js/functions.js></script>
 
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -19,11 +19,11 @@
 	    </div>
 
 	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="index.html">Home</a></li>
-	      <li><a href="#mainCourse">Main Course</a></li>
-	      <li><a href="#androidStudio">Android Studio</a></li>
-	      <li class="disabled"><a href="#">Other</a></li>
-	      <li class="disabled"><a href="#">Contact Me</a></li>
+	      <li id="nav" class="active"><a href="index.html"> Home </a></li>
+	      <li id="nav"><a onclick='scroll("mainCourse");'> Main Course </a></li>
+	      <li id="nav" ><a href="#androidStudio"> Android Studio </a></li>
+	      <li id="nav" class="disabled"><a href="#"> Other </a></li>
+	      <li id="nav" class="disabled"><a href="#"> Contact Me </a></li>
 	    </ul>
 
 	    <ul class="nav navbar-nav navbar-right">
@@ -59,6 +59,8 @@
 
 
 	<center><h1> WEBSITE UNDER CONSTUCTION </h1></center>
+
+	<button onclick="scroll()">Click me to scroll horizontally!</button>
 
      <!-- START THE FEATURETTES -->
     <div id = "featurettes">
