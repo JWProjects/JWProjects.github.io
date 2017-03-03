@@ -28,5 +28,5 @@ function searchFunction() {
 function scroll(element){   
     var ele = document.getElementById(element);  
     window.scrollTo(ele.offsetLeft,ele.offsetTop);
-    window.scrollBy(0, -55);
+    window.scrollBy(0, -100);
 }
