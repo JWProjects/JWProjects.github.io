@@ -25,7 +25,14 @@ function searchFunction() {
     }
 }
 
-function scroll(element){   
+function scroll(element){
+    var ele = document.getElementById(element);  
+    window.scrollTo(ele.offsetLeft,ele.offsetTop);
+    window.scrollBy(0, -100);
+}
+
+function scroll2(element){
+    window.location = 'jwprojects.tk'
     var ele = document.getElementById(element);  
     window.scrollTo(ele.offsetLeft,ele.offsetTop);
     window.scrollBy(0, -100);

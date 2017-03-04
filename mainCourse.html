@@ -2,48 +2,51 @@
 <html>
 <head>
 	<title>JWProjects</title>
-	<link href = "css/bootstrap.css" rel="stylesheet">
-	<link href = "css/style.css" rel="stylesheet">
-	<link href = "http://fonts.googleapis.com/css?family=Open+Sans:400, 600" rel ="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
 </head>
-<script src=js/Search.js></script>
+
+<script src=js/bootstrap.js></script>
 <script src=js/functions.js></script>
+
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
-	      <a class="navbar-brand">Joe Wild Projects</a>
+	     	<a class="navbar-brand">Joe Wild Projects</a>
 	    </div>
 
 	    <ul class="nav navbar-nav">
-	      <li><a href="index.html">Home</a></li>
-	      <li class="active"><a href="mainCourse.html">Main Course</a></li>
-	      <li class="disabled"><a href="#">Android Studio</a></li>
-	      <li class="disabled"><a href="#">Other</a></li>
+	      <li id="nav"><a href="index.html"> Home </a></li>
+	      <li id="nav"><a href="#"> Main Course </a></li>
+	      <li id="nav" ><a onclick='scroll2("androidStudio");'> Android Studio </a></li>
+	      <li id="nav"><a onclick='scroll("other");''> Other </a></li>
+	      <li id="nav" class="disabled"><a href="#"> Contact Me </a></li>
 	    </ul>
 
 	    <ul class="nav navbar-nav navbar-right">
-	      <div class="form-group">
+	      <div class="search-box">
 	        <input type="text" id="myInput" onkeyup="searchFunction()" class="form-control" placeholder="Search">
 	      </div>
 	    </ul>
 	</nav>
+	
 	  
+	<!--Search function-->
+	<div id = "search">
+		<ul id="myUL">
+			<li><a href="#" class="header">Main Course: Topic 1 Computational Thinking</a></li>
+			<li id="cell"><a href="#">C1: Computational Thinking</a></li>
+			<li><a href="#">C2: Elements of Computational Thinking</a></li>
 
-<!--Search function-->
-<div id = "search">
-	<ul id="myUL">
-	  <li><a href="#">Android Stuff</a></li>
-
-	  <li><a href="#">Chapter 1</a></li>
-	  <li><a href="#">Chapter 2</a></li>
-
-	  <li><a href="#">Python</a></li>
-
-	</ul>
-</div>
-
+			<li><a href="#" class="header">Main Course: Topic 2 Problem Solving</a></li>
+			<li><a href="#">C3: Problem Solving</a></li>
+			<li><a href="#">C4: Programming Techniques</a></li>
+			<li><a href="#">C5: Algorithms</a></li>
+		</ul>
+	</div>
 
 </body>
 
