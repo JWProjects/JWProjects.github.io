@@ -30,3 +30,4 @@ function scroll(element){
     window.scrollTo(ele.offsetLeft,ele.offsetTop);
     window.scrollBy(0, -100);
 }
+

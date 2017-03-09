@@ -98,10 +98,12 @@ p{
 
 #mainCourse:hover {
   text-decoration: none;
+  cursor: default;
 }
 
 #androidStudio:hover {
   text-decoration: none;
+  cursor: default;
 }
 
 /*footer*/
@@ -114,21 +116,15 @@ p{
 
 
 /*Main course content pages*/
-#container-fluid{
-  position: fixed;
-  z-index: 1;
-  margin-top: 60px;
-  width:100%;
-}
-
 #text{
+  margin-top: 55px;
   color: black;
   padding-left: 15px;
   float:left;
   width:60%;
 }
 #img{
-  margin-top: 30px;
+  margin-top: 85px;
   padding-left: 5%;
   float:right;
   width:40%;
@@ -137,6 +133,5 @@ p{
 .image{
   margin-bottom: 20px;
 }
-
 
 

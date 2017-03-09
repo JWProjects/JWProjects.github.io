@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JWProjects.tk</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+</head>
+
+<script src=js/bootstrap.js></script>
+<script src=js/functions.js></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<body>
+	<!--navbar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	     	<a href="mainCourse.html" class="navbar-brand">Main Course</a>
+	  	</div>
+
+	    <ul class="nav navbar-nav">
+	      	<li id="nav"><a href="index.html"> Home </a></li>
+
+		    <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Computational Thinking <b class="caret"></b></a>
+           		<ul class="dropdown-menu">
+					<h6 class="dropdown-header">Topic 1 </h6>
+					<li class="divider"></li>
+					<li><a href="chapter1.html">C1: Computational Thinking</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C2: Elements of Computational Thinking</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Problem Solving <b class="caret"></b></a>
+           		<ul class="dropdown-menu">
+					<h6 class="dropdown-header">Topic 2 </h6>
+					<li class="divider"></li>
+					<li><a href="#">C3: Problem Solving</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C4: Programming Techniques</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C5: Algorithms</a></li>
+				</ul>
+			</li>
+
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Computer Systems <b class="caret"></b></a>
+           		<ul class="dropdown-menu">
+					<h6 class="dropdown-header">Topic 3 </h6>
+					<li class="divider"></li>
+					<li><a href="#">C6: Applications Generation</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C7: Software</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C8: Applications Development</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C9: Software Development</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C10: Computer Systems</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C11: Data Tyes</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C12: Computer Arithmetic</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C13: Data Structures</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C14: Logic Gates and Boolean Algebra</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C15: Databases</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C16: Data Transmission</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C17: The Internet</a></li>
+				</ul>
+			</li>
+
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Legal, Ethical, Moral and Social Issues <b class="caret"></b></a>
+			    <ul class="dropdown-menu">
+					<h6 class="dropdown-header">Topic 4</h6>
+					<li class="divider"></li>
+					<li><a href="#">C18: Computer Law and Ethical, Moral and Social Issues</a></li>
+				</ul>
+			</li>
+	    </ul>
+
+	    
+	    <ul class="nav navbar-nav navbar-right">
+	      <div class="search-box">
+	        <input type="text" id="myInput" onkeyup="searchFunction()" class="form-control" placeholder="Search">
+	      </div>
+	    </ul>
+	</nav>
+
+	<!--Search function-->
+	<div id = "search">
+		<ul id="myUL">
+			<li><a href="#" class="header">Main Course: Topic 1 Computational Thinking</a></li>
+			<li id="cell"><a href="chapter1.html">C1: Computational Thinking</a></li>
+			<li><a href="#">C2: Elements of Computational Thinking</a></li>
+
+			<li><a href="#" class="header">Main Course: Topic 2 Problem Solving</a></li>
+			<li><a href="#">C3: Problem Solving</a></li>
+			<li><a href="#">C4: Programming Techniques</a></li>
+			<li><a href="#">C5: Algorithms</a></li>
+		</ul>
+	</div>
+	
+	
+	<!--content-->
+	<div id="container-fluid">
+	  	<div id="text">
+		  	<h1> Chapter 2: Elements of Computational Thinking <br></h1>
+			<p><br>
+			<b>Backtracking - </b>is an algorithmic approach to a problem where partial solutions to a large problem are built up as a ‘pathway’ to follow. Backtracking is retracing steps to get to a place in the past to remember something. I frequently backtrack to remember where an item I have lost, might be.<br><br>
+			<b>Data Mining - </b>is using pre-existing data from databases, to create new information on the topic you require. In business it could be used to identify the the percentage of men and women buying men and women's deodorant. If say the women buy more you might want to raise the price to squeeze out more profit and in the men’s, have a sale to get more men using the product.<br><br>
+			<b>Performance Monitoring - </b>Performance monitoring is used to monitor specific areas in a computer system. For example CPU clock speed, heat output, load etc. This is very important as it can provide solutions as to why the computer keeps encountering errors, ie could be overheating. It is useful to identify if all parts of a computer are connected and functioning as they should, as sometimes a computer may not be assembled correctly, resulting in say a fan not working, or some of the RAM not being recognised. <br>Performance could be used in the real world for network speeds in a film company, that requires their video files to be transferred to editors at reliable speeds, as a failure to do this would affect the workflow of the whole company.<br><br>
+			<b>Pipelining - </b>is a term used for when lots of instructions are being executed, and the output of one process will become the input for the next process. The elements of a pipeline are often executed in parallel therefore some amount of buffer storage (appropriate temporary storage capacity) is often inserted between processes.<br><br>
+			<b>Visualisation - </b>the Strava Heat Mapping, is used to help members identify the best routes for running / cycling. They show this visually on a normal map of the roads. The most popular routes used by other Strava members are coloured in, and the more the route is used the darker it gets or it will change colour altogether. Therefore it is easier for members to find the most popular routers, by looking which has the most popularity. <br><br>
+			<b>Thinking Abstractly - </b>An abstraction is a concept of reality. It makes use of symbols to represent components of a problem so that the processor whether it be human or a computer can process the problem. Abstraction can also help to separate what does and doesn’t matter in a scenario.<br><br>
+			<b>Thinking Ahead - </b>First was whether I needed to get up for the school bus, as sometimes I can come in later if I have no lessons.<br>While planning when to come into school, I identified which resources I would need for the lessons I had today. Both of these were the night before.<br>When waking up I decided what I was going to eat for breakfast after showering.<br>After catching the bus I predicted the time it would get to school, and whether I would go to the common room, or go straight to my form room.<br>As I was going to leave school earlier than 3pm I needed to get a public bus so I had to plan which busses and at what time I would catch them to get home. I planned it so I left school slightly earlier, so when changing busses in Halifax I had time to get some food because I was hungry.<br><br>
+			<b>Thinking Procedurally - </b>When designing any application for a computer system that is to be split among a team of people, as the completed aspects of the application must work together, Order of execution needs to be taken into account as it may may be that you need data to be processed by one module before another can use it. Particularly as it can be unpredictable as to how each part will will work when used with the rest of the chunks.<br><br>
+			<b>Thinking Logically - </b>In a flowchart a diamond shape is used for decision, as you can have an input coming in one corner, and the ‘yes’ or ‘no’ coming out the others.<br>In a programming language a decision is made by an IF statement, this can extend to an ELSE if for the opposite side o f the decision, and ELSEIF can be used if there are more than two possible outcomes to the decision.<br><br>
+			<b>Thinking Concurrently - </b>Concurrent means acting / happening at the same time, this relates to computers nowadays as they can process multiple tasks at the same time, due to multi core CPU technology. <br><br>
+			</p>
+			
+	  	</div>
+		<div id="img">
+		  	<img class="image" align="center" width="90%" src="img/C2_Pic.jpg">
+		</div>
+	</div>	
+	
+</body>
+
+</html>

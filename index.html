@@ -12,7 +12,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
+
+
 <body>
+
+
 	<!--navbar-->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 	  <div class="container-fluid">
@@ -25,7 +30,7 @@
 	      <li id="nav"><a onclick='scroll("mainCourse");'> Main Course </a></li>
 	      <li id="nav" ><a onclick='scroll("androidStudio");'> Android Studio </a></li>
 	      <li id="nav"><a onclick='scroll("other");'> Other </a></li>
-	      <li id="nav"><a onclick='scroll("contactMe");'> Contact Me </a></li>
+	      <li><a href="#contactMe" data-toggle="modal">Contact</a></li>
 	    </ul>
 
 	    <ul class="nav navbar-nav navbar-right">
@@ -40,7 +45,7 @@
 		<ul id="myUL">
 			<li><a href="#" class="header">Main Course: Topic 1 Computational Thinking</a></li>
 			<li><a href="chapter1.html">C1: Computational Thinking</a></li>
-			<li><a href="#">C2: Elements of Computational Thinking</a></li>
+			<li><a href="chapter2.html">C2: Elements of Computational Thinking</a></li>
 
 			<li><a href="#" class="header">Main Course: Topic 2 Problem Solving</a></li>
 			<li><a href="#">C3: Problem Solving</a></li>
@@ -49,6 +54,43 @@
 		</ul>
 	</div>
 
+	<div class="modal fade" id="contactMe" role="dialog">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<form class="form-horizontal" role="form" method="post" action="mailto:11wildj@nhgs.calderdale.sch.uk">
+    				<div class="modal-header">
+    					<h4>Contact<h4>
+	    			</div>
+	    			<div class="modal-body">
+    					<div class="form-group">
+    						<label for="contact-name" class="col-sm-2 control-label">Name</label>
+    						<div class="col-sm-10">
+    							<input type="text" class="form-control" id="contact-name" placeholder="First & Last Name">
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<label for="contact-email" class="col-sm-2 control-label">Email</label>
+    						<div class="col-sm-10">
+    							<input type="email" class="form-control" id="contact-email" placeholder="example@domain.com">
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<label for="contact-message" class="col-sm-2 control-label">Message</label>
+    						<div class="col-sm-10">
+    							<textarea class="form-control" rows="4"></textarea>
+    						</div>
+    					</div>
+	    			</div>
+	    			<div class="modal-footer">
+    					<a class="btn btn-default" data-dismiss="modal">Close</a>
+    					<button type="submit" id="submit" name="submit" value="submit" class="btn btn-primary">Send</button>
+    				</div>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+	
+	
 	<!-- IMAGE-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
@@ -76,9 +118,7 @@
 		        <div class="col-md-7">
 			        <h2 class="featurette-heading">Main Course<br></h2>
 			        <p class="lead">We are following the A-Level Computer Science Course, by Hodder Education. The course has 5 topics: 'Computational Thinking', 'Problem Solving', 'Computer Systems', 'Legal, ethical, moral, social issues' and a 'Project' at the end. The individual topics consist of varying number of Chapters, amounting 22 chapters overall. The notes made on all the topics I've completed can be found using the button below, or searching in the navigation bar.<br><br><br><br><br></p>
-			        	
-		        	
-		        	
+			       	
 			        <a href="mainCourse.html"><button type="button" id="featurette-button" class="btn btn-primary btn-lg btn-info">View Main Course Topics/Chapters</button></a>
 		        	
 		        </div>
@@ -116,49 +156,7 @@
 		      </div>
 		    </div>
 	    </a>
-		
-		<hr class="featurette-divider">
-
- 		<a id="contactMe">
-		    <div class="row featurette">
-		        <div class="col-md-7">
-		          <form class="form-horizontal" role="form" method="post" action="index.php">
-						<div class="form-group">
-							<label for="name" class="col-sm-2 control-label">Name</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="email" class="col-sm-2 control-label">Email</label>
-							<div class="col-sm-10">
-								<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="message" class="col-sm-2 control-label">Message</label>
-							<div class="col-sm-10">
-								<textarea class="form-control" rows="4" name="message"></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-10 col-sm-offset-2">
-								<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-10 col-sm-offset-2">
-								<! Will be used to display an alert to the user>
-							</div>
-						</div>
-					</form>
-		        </div>
-		        <div class="col-md-5">
-		          <img class="image-other" src=#>
-		      </div>
-		    </div>
-	    </a> 
-      </div>
+    </div>
       <!-- /END THE FEATURETTES -->
 
     <!--footer-->
